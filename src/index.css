@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary colors — TGTG-inspired teal */
+  --color-primary-50: #f0fdfa;
+  --color-primary-100: #ccfbf1;
+  --color-primary-200: #99f6e4;
+  --color-primary-300: #5eead4;
+  --color-primary-400: #2dd4bf;
+  --color-primary-500: #14b8a6;
+  --color-primary-600: #0d9488;
+  --color-primary-700: #0e7c6b;
+  --color-primary-800: #115e56;
+  --color-primary-900: #134e48;
+
+  /* Accent / warning — used for badges like "X left" */
+  --color-accent-400: #facc15;
+  --color-accent-500: #eab308;
+
+  /* Danger — for errors, cancel buttons */
+  --color-danger-500: #ef4444;
+  --color-danger-600: #dc2626;
+
+  /* Success */
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+
+  /* Font */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Base styles for mobile-first PWA */
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Ensure app fills viewport */
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* PWA safe area insets */
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
