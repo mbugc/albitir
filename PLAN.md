@@ -2,6 +2,7 @@ Context
 Albitir is a Turkey-based "Too Good To Go" clone — a PWA mobile-first web app for surplus food rescue. The /flows folder contains 9 detailed specification documents describing consumer onboarding, ordering, searching, browsing, saving/favourites, cancellation, profile management, and business signup/dashboard flows. These specs are modeled after the Too Good To Go iOS app and serve as our UX reference.
 Goal: Build an end-to-end working MVP where a consumer can sign up, browse offers, reserve a surprise bag, and view their reservation — AND a business can sign up, create offers, and manage them. All powered by Firebase, with clean architecture, and payment as a placeholder.
 
+
 A. Flow Analysis Summary
 A.1 Screen Inventory (MVP Only)
 Consumer Screens (14 screens)
